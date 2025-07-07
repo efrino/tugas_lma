@@ -6,19 +6,20 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "export:swagger": "node src/utils/swagger-export.js",
+    "generate:endpoints": "node src/utils/generate-endpoints.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.45.2",
     "@supabase/supabase-js": "^2.50.3",
     "bcrypt": "^5.1.0",
     "bcryptjs": "^3.0.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "helmet": "^6.1.0",
     "joi": "^17.6.0",

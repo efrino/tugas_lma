@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-require('@dotenvx/dotenvx').config();
+require('dotenv').config();
 
 const sign = (payload, options = {}) => {
     return jwt.sign(payload, process.env.JWT_SECRET, {

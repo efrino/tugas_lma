@@ -7,10 +7,15 @@ const options = {
             title: 'Login & Role Management API',
             version: '1.0.0',
             description: 'API untuk manajemen login, role, dan akses menu',
+            contact: {
+                name: 'Your Team',
+                email: 'you@example.com',
+            },
         },
         servers: [
             {
                 url: 'http://localhost:9999',
+                description: 'Local dev server',
             },
         ],
         components: {
@@ -24,7 +29,7 @@ const options = {
         },
         security: [{ bearerAuth: [] }],
     },
-    apis: ['./src/routes/*.js'], // Path ke file yang akan di-scan swagger
+    apis: ['./src/routes/**/*.js'], // Pastikan recursive untuk folder routes
 };
 
 const swaggerSpec = swaggerJSDoc(options);
