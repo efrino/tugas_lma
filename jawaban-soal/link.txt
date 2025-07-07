@@ -1,1 +1,5 @@
-https://project-lma.netlify.app/login
+frontend : https://project-lma.netlify.app/login
+backend : https://tugas-lma.onrender.com/
+
+repo frontend : https://github.com/efrino/aplikasi-lma.git
+repo backend : https://github.com/efrino/tugas_lma.git
